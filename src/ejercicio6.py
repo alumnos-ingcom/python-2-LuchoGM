@@ -21,7 +21,6 @@ def codifique(texto, cantidad):
 def descodifique(texto, cantidad):
     vacio = ""
     abecedario = "abcdefghijklmnñopqrstuvwxyz"
-    cantidad -= cantidad
     for i in texto:
         if i in abecedario:
             letra = abecedario[abecedario.find(i)-cantidad]
@@ -39,7 +38,7 @@ def principal():
     print (funcion)
     cantidad2 = int(input("Ingrese un numero: "))
     texto2 = input("Ingres el texto: ")
-    funcion2 = descodifique(texto, cantidad)
+    funcion2 = descodifique(texto2, cantidad2)
     print (funcion2)
 
 
